@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* Engloba a aplicação para utilizar redux, ou seja, ficar escutando os eventos */
+import { Provider } from "react-redux";
+/* A inicialização da store do redux que armazenará o estado */
+import store from "./store/index";
+
+import TodoList from "./components/TodoList";
+import Counter from "./components/Counter";
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <TodoList />
+        <Counter />
+      </Provider>
+    );
+  }
 }
-
-export default App;
