@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## More information
+
+This project does not use a middleware like redux saga. It is to learn how to work in practice with ReactJS and Redux.
+The application add Todos to a list and two watchers watch the changes to update their states like new item added to list or count of todos.
+
 ## Available Scripts
 
 In the project directory, you can run:
