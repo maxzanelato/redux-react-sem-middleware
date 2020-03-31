@@ -6,7 +6,7 @@ import * as todoActions from "../store/ducks/todos/actions";
 
 class TodoList extends Component {
   state = {
-    newTodoText: ""
+    newTodoText: "Novo Café"
   };
 
   constructor(props) {
@@ -16,7 +16,7 @@ class TodoList extends Component {
 
   addNewTodo = () => {
     this.props.addTodo(this.state.newTodoText);
-    this.setState({ newTodoText: "" });
+    this.setState({ newTodoText: "Novo Café" });
   };
 
   render() {

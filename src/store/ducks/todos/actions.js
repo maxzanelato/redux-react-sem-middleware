@@ -1,6 +1,8 @@
 export function addTodo(text) {
   return {
-    type: "ADD_TODO",
-    text
+    type: "ASYNC_ADD_TODO",
+    payload: {
+      text
+    }
   };
 }
